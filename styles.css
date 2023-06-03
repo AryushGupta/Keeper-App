@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.head {
+    background-color: rgb(255, 213, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head h1 {
+    margin: 0;
+    padding: 1.5rem 1.5rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.head #add-button {
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    margin: 1rem 1.5rem;
+    border-radius: 50%;
+    border-style: none;
+    color: rgb(255, 213, 0);
+    transition: background-color 0.4s ease;
+}
+
+.head #add-button:hover {
+    color: #fff;
+    background-color: rgb(255, 213, 0);
+    border: 2px solid #fff;
+}
+
+
+/* body-section */
+
+.body {
+    padding: 1.5rem 0;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 100vh
+}
+
+/* card component */
+.container {
+    margin: 1rem;
+    width: 300px;
+    height: 280px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 10px 5px 5px rgb(195, 195, 195);
+    text-align: center;
+    font-family: Roboto;
+    display: inline-block;
+}
+
+.container .heading input ::placeholder,
+.container .heading input ::-webkit-input-placeholder {
+    color: #b9b7b7;
+}
+
+.container .heading input {
+    width: 270px;
+    height: 50px;
+    border-style: none;
+    font-size: medium;
+    outline: none;
+    font-weight: 700;
+}
+
+.container .content textarea {
+    border-style: none;
+    resize: none;
+    outline: none;
+    font-size: large;
+    font-weight: 500;
+}
+
+.btn {
+    display: flex;
+}
+
+.container button {
+    padding: 10px 0;
+    height: 7.5%;
+    width: 50%;
+    border-style: none;
+    background-color: rgb(255, 213, 0);
+    color: #fff;
+    font-size: medium;
+    transition: background-color 0.4s ease;
+}
+
+.container button:hover {
+    background-color: #fff;
+    color: rgb(255, 213, 0);
+}
+
+#save-btn {
+    border-radius: 0 0 0 10px;
+}
+
+#delete-btn {
+    border-radius: 0 0 10px 0;
+}
+
+/* footer-styling */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgb(255, 213, 0);
+    color: #fff;
+}
+
+.footer small {
+    font-size: large;
+}

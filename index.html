@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keeper App</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/dbf8d0490c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="head">
+        <h1>Keeper</h1>
+        <button type="save" id="add-button">
+            <i class="fa-regular fa-plus fa-2xl"></i>
+        </button>
+    </section>
+
+    <section class="body">
+
+        <div class="container">
+            <div class="heading">
+                <input id="input-heading" type="text" placeholder="Title">
+            </div>
+            <div class="content">
+                <textarea id="input-content" name="note" placeholder="Take a note..." cols="29" rows="10"></textarea>
+            </div>
+            <div class="btn">
+                <button id="save-btn">Save</button>
+                <button id="delete-btn">Delete</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <small>&copy; 2023 Keeper App.All rights reserved.</small>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
