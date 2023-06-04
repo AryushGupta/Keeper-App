@@ -46,7 +46,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    min-height: 100vh
+    min-height: 70vh
 }
 
 /* card component */
