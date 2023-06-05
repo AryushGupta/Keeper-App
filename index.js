@@ -2,6 +2,7 @@ const body = document.querySelector(".body");
 
 const noteTitle = document.getElementById("input-heading");
 const noteDescription = document.getElementById("input-content");
+const wordsCounter = document.getElementById("total-words");
 
 // add-button functionality
 const addBtn = document.getElementById("add-button");
@@ -46,8 +47,21 @@ function createCard() {
         cardDescription.setAttribute(attr, descriptionAttr[attr]);
     }
 
-    cardBody.appendChild(cardDescription);
+    const wordCounterEl = document.createElement("small");
+    wordCounterEl.setAttribute("id", "total-words");
+    wordCounterEl.textContent = "Total words : 0";
 
+    cardBody.appendChild(cardDescription);
+    cardBody.appendChild(wordCounterEl);
+
+    function countWords() {
+        const text = cardDescription.value.trim();
+        const words = text.split(/\s+/).filter((item) => item).length;
+        wordCounterEl.textContent = "Total words : " + words;
+    }
+    cardDescription.addEventListener("input", countWords);
+
+    // Button section of the card ->
     const cardBtn = document.createElement("div");
     cardBtn.setAttribute("class", "btn");
 
@@ -75,10 +89,20 @@ function createCard() {
     body.appendChild(card);
 }
 
+// to count words entered in notes description area
+function countWords() {
+    const text = noteDescription.value.trim();
+    const words = text.split(/\s+/).filter((item) => item).length;
+    wordsCounter.textContent = "Total words : " + words;
+}
+noteDescription.addEventListener("input", countWords);
+
+
 // save button functionality
 const saveBtn = document.getElementById("save-btn");
 
 saveBtn.addEventListener("click", createCard);
+
 
 // delete button functionality
 const deleteBtn = document.getElementById("delete-btn");
