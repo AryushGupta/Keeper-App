@@ -53,7 +53,7 @@ body {
 .container {
     margin: 1rem;
     width: 300px;
-    height: 280px;
+    height: 310px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0px 10px 5px 5px rgb(195, 195, 195);
@@ -65,6 +65,11 @@ body {
 .container .heading input ::placeholder,
 .container .heading input ::-webkit-input-placeholder {
     color: #b9b7b7;
+}
+
+.container .heading {
+    border-bottom: 2px solid rgb(255, 213, 0);
+    margin-bottom: 10px;
 }
 
 .container .heading input {
@@ -82,6 +87,10 @@ body {
     outline: none;
     font-size: large;
     font-weight: 500;
+}
+
+.container .content small {
+    color: #b9b7b7;
 }
 
 .btn {
@@ -106,10 +115,12 @@ body {
 
 #save-btn {
     border-radius: 0 0 0 10px;
+    border-right: 1px solid #fff;
 }
 
 #delete-btn {
     border-radius: 0 0 10px 0;
+    border-left: 1px solid #fff;
 }
 
 /* footer-styling */
